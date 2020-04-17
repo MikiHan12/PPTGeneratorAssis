@@ -1,0 +1,92 @@
+﻿<Window x:Class="PPTGeneratorAssistant.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PPTGeneratorAssistant"
+        mc:Ignorable="d"
+        Title="PPTGeneratorAssistant" SizeToContent="WidthAndHeight" Height="625" Width="360" >
+    <Grid Margin="10,0,10,10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="110" />
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="110" />
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="110"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="50"/>
+
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <Label FontSize="24" Grid.Row="0" Background="AliceBlue" Grid.ColumnSpan="5"  HorizontalAlignment="Left" VerticalAlignment="Center" Content="Enter User Inputs" FontWeight="Bold"/>
+        <Label Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Content="Title Area:" FontWeight="Bold" FontSize="14"/>
+        <TextBox Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="3" Name="TitleBox" FontSize="14"/>
+        <Label Grid.Row="3" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Content="Text Area:" FontWeight="Bold" FontSize="14"/>
+        <TextBox Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="3" Name="TextBox" FontWeight="Bold" FontSize="14"/>
+        <Button Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="3" FontWeight="Bold" FontSize="18" HorizontalAlignment="Right" VerticalAlignment="Center" Click="Button_Click_Search">Search Image</Button>
+
+
+        <Label Visibility="Hidden" Name="SelectImage" FontSize="24" Grid.Row="6" Background="AliceBlue" Grid.ColumnSpan="5"  HorizontalAlignment="Left" VerticalAlignment="Center" Content="Select Suggested Images" FontWeight="Bold"/>
+        <RadioButton Visibility="Hidden" Grid.Row="7" Grid.Column="0" GroupName="Group1" Name ="btn1" Checked="RB_Checked" Click="RB_Clicked">
+            <WrapPanel>
+                <Image Visibility="Hidden" Grid.Row="7" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Name="Img1"/>
+            </WrapPanel>
+        </RadioButton>
+        <RadioButton Visibility="Hidden" Grid.Row="7" Grid.Column="2" GroupName="Group2" Name ="btn2" Checked="RB_Checked" Click="RB_Clicked">
+            <WrapPanel>
+                <Image Visibility="Hidden" Grid.Row="7" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Name="Img2"/>
+            </WrapPanel>
+        </RadioButton>
+        <RadioButton Visibility="Hidden" Grid.Row="7" Grid.Column="4" GroupName="Group3" Name ="btn3" Checked="RB_Checked" Click="RB_Clicked">
+            <WrapPanel>
+                <Image Visibility="Hidden" Grid.Row="7" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Name="Img3"/>
+            </WrapPanel>
+        </RadioButton>
+        <RadioButton Visibility="Hidden" Grid.Row="9" Grid.Column="0" GroupName="Group4" Name ="btn4" Checked="RB_Checked" Click="RB_Clicked">
+            <WrapPanel>
+                <Image Visibility="Hidden" Grid.Row="9" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Name="Img4"/>
+            </WrapPanel>
+        </RadioButton>
+        <RadioButton Visibility="Hidden" Grid.Row="9" Grid.Column="2" GroupName="Group5" Name ="btn5" Checked="RB_Checked" Click="RB_Clicked">
+            <WrapPanel>
+                <Image Visibility="Hidden" Grid.Row="9" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Name="Img5"/>
+            </WrapPanel>
+        </RadioButton>
+        <RadioButton Visibility="Hidden" Grid.Row="9" Grid.Column="4" GroupName="Group6" Name ="btn6" Checked="RB_Checked" Click="RB_Clicked">
+            <WrapPanel>
+                <Image Visibility="Hidden" Grid.Row="9" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Name="Img6"/>
+            </WrapPanel>
+        </RadioButton>
+        <RadioButton Visibility="Hidden" Grid.Row="11" Grid.Column="0" GroupName="Group7" Name ="btn7" Checked="RB_Checked" Click="RB_Clicked">
+            <WrapPanel>
+                <Image Visibility="Hidden" Grid.Row="11" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Name="Img7"/>
+            </WrapPanel>
+        </RadioButton>
+        <RadioButton Visibility="Hidden" Grid.Row="11" Grid.Column="2" GroupName="Group8" Name ="btn8" Checked="RB_Checked" Click="RB_Clicked">
+            <WrapPanel>
+                <Image Visibility="Hidden" Grid.Row="11" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Name="Img8"/>
+            </WrapPanel>
+        </RadioButton>
+        <RadioButton Visibility="Hidden" Grid.Row="11" Grid.Column="4" GroupName="Group9" Name ="btn9" Checked="RB_Checked" Click="RB_Clicked">
+            <WrapPanel>
+                <Image Visibility="Hidden" Grid.Row="11" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Name="Img9"/>
+            </WrapPanel>
+        </RadioButton>
+        <Button Visibility="Hidden" Name="PPTBtn" Grid.Row="13" Grid.ColumnSpan="5" FontWeight="Bold" FontSize="18" HorizontalAlignment="Right" VerticalAlignment="Center" Click="Button_Click_Generate">Generate PPT</Button>
+    </Grid>
+
+</Window>

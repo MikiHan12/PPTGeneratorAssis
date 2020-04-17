@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\shuyuehab\\source\\repos\\PPTGeneratorAssistant\\PPTGeneratorAssistant\\PPTGeneratorAssistant.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\shuyuehab\\source\\repos\\PPTGeneratorAssistant\\PPTGeneratorAssistant\\PPTGeneratorAssistant.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\shuyuehab\\source\\repos\\PPTGeneratorAssistant\\PPTGeneratorAssistant\\PPTGeneratorAssistant.csproj",
+        "projectName": "PPTGeneratorAssistant",
+        "projectPath": "C:\\Users\\shuyuehab\\source\\repos\\PPTGeneratorAssistant\\PPTGeneratorAssistant\\PPTGeneratorAssistant.csproj",
+        "packagesPath": "C:\\Users\\shuyuehab\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\shuyuehab\\source\\repos\\PPTGeneratorAssistant\\PPTGeneratorAssistant\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\shuyuehab\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.11.23, )"
+            },
+            "Syncfusion.Presentation.Net.Core": {
+              "target": "Package",
+              "version": "[18.1.0.44, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
